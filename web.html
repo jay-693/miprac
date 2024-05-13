@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <title>Webpage Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="download.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .content {
-            display: none; 
-        }
-    </style>
+    <script src="dom.js" defer></script> <!-- Including the JavaScript file -->
 </head>
 <body>
     <div class="main">
@@ -19,12 +16,12 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#homepage">Home</a></li>
-                    <li><a href="#industries">Industries</a></li>
-                    <li><a href="#insights">Insights</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a  onclick="hom()">Home</a></li>
+                    <li><a  onclick="ind()">Industries</a></li>
+                    <li><a  onclick="ins()">Insights</a></li>
+                    <li><a  onclick="abo()">About Us</a></li>
+                    <li><a  onclick="car()">Careers</a></li>
+                    <li><a  onclick="con()">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -33,31 +30,30 @@
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
         </div> 
-        <div id="homepage" class="content">
+        <div id="homepage" style="display: none;">
             <h2>Home</h2>
             <p>Welcome to our homepage!</p>
         </div>
-        <div id="industries" class="content">
+        <div id="industries" style="display:none;">
             <h2>Industries</h2>
             <p>Explore our industries section for more information.</p>
         </div>
-        <div id="insights" class="content">
+        <div id="insights" style="display:none;">
             <h2>Insights</h2>
             <p>Read our latest insights and updates here.</p>
         </div>
-        <div id="about" class="content">
+        <div id="about" style="display:none;">
             <h2>About Us</h2>
             <p>Learn more about our company and our mission.</p>
         </div>
-        <div id="careers" class="content">
+        <div id="careers" style="display:none;">
             <h2>Careers</h2>
             <p>Discover exciting career opportunities with us.</p>
         </div>
-        <div id="contact" class="content">
+        <div id="contact" style="display:none;">
             <h2>Contact Us</h2>
             <p>Get in touch with us for any queries or feedback.</p>
         </div>
     </div>
-    <script src="dam.js"></script>
 </body>
 </html>
