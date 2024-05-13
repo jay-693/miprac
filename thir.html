@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login page</title>
+<link rel="icon" type="image/x-icon" href="download.png">
+<style>
+
+p{
+color:#ADD8E6;
+font-family:Arial;
+margin:0cm;
+font-size: 12px;;
+}
+h1{
+font-style:italic;
+font-weight:normal;
+}
+lable{
+line-height: 1.8;
+width:200px;
+}
+
+#uname,#pass{
+border-radius:25px;
+line-height: 1.8;
+width:200px;
+}
+button{
+background-color:#ADD8E6;
+font-size:2vw;
+font-weight:bold;
+padding: 5px;
+border-radius:25px;
+font-size:15px;
+width:200px;
+}
+</style>
+</head>
+<body>
+<center>
+
+<img src="download.png" alt="workplace">
+<h1>Sign in to Cognine</h1>
+<div class="tup">
+<form onsubmit="return valid()" action="sec.html">
+  <label for="fname"><b>Username or email address:</b></label><br>
+  <input type="text" id="uname" >
+  <p id="er" style="color:red; visibility:hidden;">username is required</p>
+  <label for="pass"><b>Password</b></label><br>
+  <input type="password" id="pass">
+  <p id="err" style="color:red; visibility:hidden;">Password is required</p>
+  <p id="erro" style="color:red; visibility:hidden;">Password size should be >=8</p>
+  <button type="submit">Login</button>
+</form>
+<div>
+<p>forgot password?</p>
+</center>
+<script src="vad.js"></script>
+</body>
+</html>
