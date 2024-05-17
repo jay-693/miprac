@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="download.png">
     <link rel="stylesheet" href="style.css">
-    <script src="dom.js" defer></script> <!-- Including the JavaScript file -->
+    <script src="dom.js" defer></script> 
 </head>
 <body>
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">Cognine</h2>
+                <img class="logo" src="images.jpeg" alt="cognine" width="200" height="70">
+                <!-- <h2 class="logo">Cognine</h2> -->
             </div>
 
             <div class="menu">
                 <ul>
-                    <li><a href="#" onclick="hom()">Home</a></li>
-                    <li><a href="#" onclick="ind()">Industries</a></li>
-                    <li><a href="#" onclick="ins()">Insights</a></li>
-                    <li><a href="#" onclick="abo()">About Us</a></li>
-                    <li><a href="#" onclick="car()">Careers</a></li>
-                    <li><a href="#" onclick="con()">Contact Us</a></li>
+                    <li><a href="#" onclick="hom()"><b>Home</b></a></li>
+                    <li><a href="#" onclick="ind()"><b>Industries</b></a></li>
+                    <li><a href="#" onclick="ins()"><b>Insights</b></a></li>
+                    <li><a href="#" onclick="abo()"><b>About Us</b></a></li>
+                    <li><a href="#" onclick="car()"><b>Careers</b></a></li>
+                    <li><a href="#" onclick="con()"><b>Contact Us</b></a></li>
                 </ul>
             </div>
 
@@ -30,13 +31,25 @@
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
         </div> 
-        <div id="homepage" style="display: none;">
+        <hr>
+        <br><br>
+        <!-- <div id="homepage" style="display: none;">
             <h2>Home</h2>
             <p>Welcome to our homepage!</p>
-        </div>
+        </div> -->
+        <div id="homepage" style="display: none;">
+            <img src="what we do.jpg" alt="Notebook" width="100%">
+            <div id="content">
+              <h1>What We Do</h1>
+              <p><a href="web.html" style="text-decoration: none; color: cadetblue;">Cognine</a> | What We Do</p>
+            </div>
+          </div>
         <div id="industries" style="display:none;">
-            <h2>Industries</h2>
-            <p>Explore our industries section for more information.</p>
+            <img src="industries.jpg" alt="Notebook" width="100%">
+            <div id="content1">
+              <h1>Industries</h1>
+              <p><a href="web.html" style="text-decoration: none; color: cadetblue;">Cognine</a> | What We Do</p>
+            </div>
         </div>
         <div id="insights" style="display:none;">
             <h2>Insights</h2>

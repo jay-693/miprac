@@ -14,40 +14,40 @@ function validate()
            uname.style.border = "solid 3px red";
            epass.style.border = "solid 3px red";
            cpass.style.border = "solid 3px red";
-           error1.style.visibility="visible";
-           error2.style.visibility="visible";
-           error3.style.visibility="visible";
+           error1.style.display="block";
+           error2.style.display="block";
+           error3.style.display="block";
            return false;
     }
     else if(username.value.trim() == "")
     {
        //alert("no blank values allowed");
        uname.style.border = "solid 3px red";
-       error1.style.visibility="visible";
+       error1.style.display="block";
        return false;
     }
     else if(password.value.trim() =="")
     {
         epass.style.border = "solid 3px red";
-        error2.style.visibility="visible";
+        error2.style.display="block";
        return false;
     }
     else if(confirmPass.value.trim() == "")
     {
         cpass.style.border = "solid 3px red";
-        error3.style.visibility="visible";
+        error3.style.display="block";
         return false;
     }
     else if(password.value.trim().length<8){
         epass.style.border = "solid 3px red";
-        error5.style.visibility="visible";
+        error5.style.display="block";
         return false;
     }
     else if(password.value!=confirmPass.value)
     {
         //alert("both fields are not same");
         cpass.style.border= "solid 3px red";
-        error4.style.visibility="visible";
+        error4.style.display="block";
         return false;
     }
     else{
